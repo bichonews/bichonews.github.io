@@ -69,6 +69,11 @@ async function init() {
     });
 
     pageFlip.loadFromHTML(document.querySelectorAll('.page'));
+    
+    // Remove os tamanhos forçados pela biblioteca que causam "zoom" gigante no mobile
+    container.style.minWidth = '';
+    container.style.maxWidth = '';
+    container.style.minHeight = '';
 
     // Configura a navegação com as setas do teclado
     document.addEventListener('keydown', (e) => {
