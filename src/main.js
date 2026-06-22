@@ -91,30 +91,8 @@ async function init() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const btnReadOnline = document.getElementById('btn-read-online');
-  const btnBack = document.getElementById('btn-back');
-  const introScreen = document.getElementById('intro-screen');
   const loading = document.getElementById('loading');
-  const bookContainer = document.getElementById('book-container');
-  let isInitialized = false;
 
-  btnReadOnline.addEventListener('click', () => {
-    introScreen.style.display = 'none';
-    btnBack.style.display = 'flex';
-    
-    if (!isInitialized) {
-      loading.style.display = 'flex';
-      init();
-      isInitialized = true;
-    } else {
-      bookContainer.style.display = 'block';
-    }
-  });
-
-  btnBack.addEventListener('click', () => {
-    bookContainer.style.display = 'none';
-    loading.style.display = 'none';
-    btnBack.style.display = 'none';
-    introScreen.style.display = 'flex';
-  });
+  loading.style.display = 'flex';
+  init();
 });
