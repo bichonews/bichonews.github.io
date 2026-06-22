@@ -90,4 +90,14 @@ async function init() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', () => {
+  const btnReadOnline = document.getElementById('btn-read-online');
+  const introScreen = document.getElementById('intro-screen');
+  const loading = document.getElementById('loading');
+
+  btnReadOnline.addEventListener('click', () => {
+    introScreen.style.display = 'none';
+    loading.style.display = 'flex';
+    init();
+  });
+});

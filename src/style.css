@@ -95,3 +95,76 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* Intro Screen Styles */
+#intro-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+  z-index: 20;
+  max-width: 90%;
+}
+
+#intro-screen h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+#intro-screen p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+#intro-screen .actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#intro-screen button,
+#intro-screen a {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+#btn-read-online {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#btn-read-online:hover {
+  background-color: #111;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+#btn-download {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+#btn-download:hover {
+  background-color: #e9e9e9;
+  transform: translateY(-2px);
+}
