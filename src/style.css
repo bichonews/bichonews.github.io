@@ -27,7 +27,6 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  padding: 0;
   perspective: 1000px;
 }
 
@@ -97,10 +96,10 @@ body {
 }
 
 /* Floating Button Styles */
-#btn-back,
 #btn-download-float {
   position: absolute;
-  left: 20px;
+  top: 20px;
+  right: 20px;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -109,7 +108,6 @@ body {
   height: 48px;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #ddd;
-  padding: 0;
   border-radius: 50%;
   color: #333;
   cursor: pointer;
@@ -119,25 +117,7 @@ body {
   text-decoration: none;
 }
 
-#btn-back {
-  top: 20px;
-}
-
-#btn-download-float {
-  top: 20px;
-  right: 20px;
-  left: auto;
-}
-
-#btn-back:hover,
 #btn-download-float:hover {
   background: #f0f0f0;
-}
-
-#btn-back:hover {
-  transform: translateX(-3px);
-}
-
-#btn-download-float:hover {
   transform: translateY(3px);
 }
