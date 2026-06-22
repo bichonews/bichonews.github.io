@@ -124,7 +124,9 @@ body {
 }
 
 #btn-download-float {
-  bottom: 20px;
+  top: 20px;
+  right: 20px;
+  left: auto;
 }
 
 #btn-back:hover,
